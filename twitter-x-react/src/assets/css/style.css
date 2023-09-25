@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-layout {
+    width: 1265px;
+    margin: auto;
+    display: flex;
+}
+
+
+.main-div {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+
+.main-div-2 {
+    flex: 1;
+    max-width: 600px;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
+}
+
+.rightbar {
+    width: 350px;
+    margin-right: 0.5rem;
+}
+
+.sidebar {
+    width: 275px;
+    padding: 2px;
+    min-height: 100vh;
+}
+
+.logo{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.logo:hover{
+    background-color: #2f3336;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.menu-bar{
+    display: inline-block;
+    margin: 7px;
+    padding: 2px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.menu:hover{
+    background-color: #2f3336;
+    border-radius: 15px;
+}
+
+.material-symbols-outlined{
+    display: inline-block;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    color: white;
+}
