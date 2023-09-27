@@ -35,42 +35,95 @@ body {
     min-height: 100vh;
 }
 
-.logo{
+.logo {
     font-size: 1.8rem;
     text-decoration: none;
-    color: white;
     margin: 15px;
     padding: 8px;
     border-radius: 30px;
     margin-bottom: 50px;
-}
-
-.logo:hover{
-    background-color: #2f3336;
-}
-
-.link{
-    text-decoration: none;
-}
-
-.menu-bar{
-    display: inline-block;
-    margin: 7px;
-    padding: 2px;
-    text-align: center;
-    font-size: 18px;
     color: white;
 }
 
-.menu:hover{
+.logo:hover {
+    background-color: #2f3336;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.active-link {
     background-color: #2f3336;
     border-radius: 15px;
 }
 
-.material-symbols-outlined{
+.menu-bar {
+    display: inline-block;
+    margin: 7px;
+    padding: 2px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.menu {
+    width: 215px;
+}
+
+.menu:hover {
+    background-color: #2f3336;
+    border-radius: 15px;
+}
+
+.material-symbols-outlined {
     display: inline-block;
     margin: 10px;
     padding: 2px;
     text-align: center;
     color: white;
+}
+
+.upper {
+    padding: 0 16px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.home-title {
+    width: 566px;
+    height: 53px;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.upper-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.upper-buttons>div {
+    margin-top: 20px;
+    margin-bottom: 11px;
+    padding: 10px 20px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(113, 118, 123)
+}
+
+.upper-buttons>div:hover {
+    background-color: #545758;
+    transition: 0.25s;
+    color: white;
+}
+
+.active-button {
+    color: white;
+    border-bottom: 5px solid rgb(29, 155, 240);
 }
