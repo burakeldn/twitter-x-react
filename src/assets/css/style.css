@@ -127,3 +127,70 @@ body {
     color: white;
     border-bottom: 5px solid rgb(29, 155, 240);
 }
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 60%;
+    min-height: 100vh;
+}
+
+.login-logo>span {
+    margin: auto;
+    font-size: 439px;
+}
+
+.login-side {
+    width: 40%;
+}
+
+.login-text{
+    height: 200px;
+    width: 410px;
+    font-size: 70px;
+    margin-top: -200px;
+    font-weight: bold;
+}
+
+.login-alt-text{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-google{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.button-apple{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

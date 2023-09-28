@@ -7,6 +7,7 @@ import Message from '../pages/message'
 import List from '../pages/list'
 import Bookmark from '../pages/bookmark'
 import Profil from '../pages/profil'
+import Login from '../components/login'
 
 const routes = createBrowserRouter ([
     {
@@ -40,8 +41,12 @@ const routes = createBrowserRouter ([
             {
                 path: 'profil',
                 element: <Profil/>
-            }
+            },
         ]
+    },
+    {
+        path: 'login',
+        element: <Login/>
     }
 ])
 
