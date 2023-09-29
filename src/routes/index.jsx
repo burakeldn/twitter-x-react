@@ -8,6 +8,7 @@ import List from '../pages/list'
 import Bookmark from '../pages/bookmark'
 import Profil from '../pages/profil'
 import Login from '../components/login'
+import LoginComponent from '../components/login/loginComponent'
 
 const routes = createBrowserRouter ([
     {
@@ -45,8 +46,12 @@ const routes = createBrowserRouter ([
         ]
     },
     {
-        path: 'login',
-        element: <Login/>
+        path: '/login',
+        element: <Login/>,
+        children: [{
+            path: 'google',
+            element: <LoginComponent/>
+        }]
     }
 ])
 

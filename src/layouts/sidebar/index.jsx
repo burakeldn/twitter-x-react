@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
+
+    const navigate = useNavigate()
+
+    const logout = () => {
+        localStorage.clear()
+        navigate('/login')
+    }
 
     return (
         <aside className="sidebar">
@@ -97,6 +104,10 @@ export default function Sidebar() {
                     </div>
                 </div>
             </Link>
+
+            <div>
+                <button onClick={logout}>Çık</button>
+            </div>
         </aside>
     )
 }
