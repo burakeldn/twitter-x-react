@@ -1,4 +1,19 @@
+import React, { useState } from "react"
+import LoginComponent from "./loginComponent"
+
 export default function Login() {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
+
+
     return (
         <div className="login-container">
             <div className="login-logo">
@@ -11,8 +26,16 @@ export default function Login() {
                 <div className="login-alt-text">
                     Hemen katıl.
                 </div>
-                <div className="button-google">
-                    Google ile kaydolun
+                <div>
+                    <div className="button-google" onClick={openModal}>
+                        Google ile kaydolun
+                    </div>
+                    {modalOpen && (
+                        <div className="modal-container">
+                            <div className="modal-overlay" onClick={closeModal}></div>
+                            <LoginComponent />
+                        </div>
+                    )}
                 </div>
                 <div className="button-apple">
                     Apple ile kaydol
@@ -27,7 +50,7 @@ export default function Login() {
                 <div className="login-title">
                     Zaten bir hesabın var mı?
                 </div>
-                <div className="login-buuton">
+                <div className="login-button">
                     Giriş yap
                 </div>
             </div>
